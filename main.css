@@ -21,15 +21,7 @@ section{
 	opacity: .50;
 }
 
-.intro-content {
-	display: table-cell;
-	vertical-align: middle;
-	text-align: center;
-	-webkit-transform: translateY(-2.1rem);
-	-ms-transform: translateY(-2.1rem);
-	transform: translateY(-2.1rem);
-}
-.intro-content h1 {
+h1 {
 	color: #FFFFFF;
 	font-family: "poppins-medium", sans-serif;
 	font-size: 8.4rem;
@@ -41,7 +33,7 @@ section{
 	margin-right: auto;
 	text-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
-.intro-content h5 {
+h5 {
 	color: #cc005f;
 	font-family: "poppins-bold", sans-serif;
 	font-size: 2.3rem;
@@ -60,49 +52,27 @@ section{
 	color: #FFFFFF;
 	text-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
 }
-.intro-content .intro-position span {
+ span {
 	display: inline-block;
 }
-.intro-content .intro-position span::after {
+ span::after {
 	content: "|";
 	text-align: center;
 	display: inline-block;
 	padding: 0 8px 0 14px;
 	color: rgba(255, 255, 255, 0.3);
 }
-.intro-content .intro-position span:first-child::before {
+ span:first-child::before {
 	content: "|";
 	text-align: center;
 	display: inline-block;
 	padding: 0 14px 0 8px;
 	color: rgba(255, 255, 255, 0.3);
 }
-.intro-content .button {
-	color: #FFFFFF !important;
-	border-color: rgba(255, 255, 255, 0.3);
-	height: 6rem !important;
-	line-height: 5.4rem !important;
-	padding: 0 3.5rem 0 3rem !important;
-	margin-top: .6rem;
-	font-size: 1.3rem;
-	text-transform: uppercase;
-	letter-spacing: .25rem;
-}
-.intro-content .button:hover, .intro-content .button:focus {
-	border-color: #cc005f;
-}
-.intro-content .button::after {
-	display: inline-block;
-	content: "\f107";
-	font-family: fontAwesome;
-	font-size: 1.6rem;
-	line-height: inherit;
-	text-align: center;
-	position: relative;
-	left: 1.2rem;
-}
 
-.intro-social {
+
+
+ul{
 	display: block;
 	position: absolute;
 	width: 100%;
@@ -112,14 +82,14 @@ section{
 	margin: 0;
 	padding: 0;
 }
-.intro-social li {
+li {
 	display: inline-block;
 	margin: 0 20px;
 	padding: 0;
 }
-.intro-social li a, .intro-social li a:visited {
+li a, .intro-social li a:visited {
 	color: #FFFFFF;
 }
-.intro-social li a:hover, .intro-social li a:focus {
+li a:hover, .intro-social li a:focus {
 	color: #cc005f;
 }
