@@ -1,5 +1,9 @@
 # csndylim.github.io
-I'm exploring on how to set up a webpage. 
-Hence, there will be a lot of commits.
 
-Thanks for making me learn :)
+Hello there
+
+I have no background in web development.
+Hence, I'm exploring on how to set up a webpage. 
+Therefore, there will be a lot of commits in this repository.
+
+Thanks for viewing my progress on setting up the webpage~
