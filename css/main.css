@@ -1083,59 +1083,60 @@ button::-moz-focus-inner, input::-moz-focus-inner {
  *
  * -------------------------------------------------------------------
  */
-header {
-	display: #FFFFFF;
-	position: fixed;
-	width: 100%;
-	min-height: 66px;
-	z-index: 600;
+ header {
+ 	display: #FFFFFF;
+ 	position: fixed;
+ 	width: 100%;
+ 	min-height: 66px;
+ 	z-index: 600;
 
-}
+ }
 
 
-/* dropdown nav */
-.main-navigation {
-	padding: 24px 30px 42px;
-	margin: 0;
-	background: #000000;
-	font-family: "poppins-medium", sans-serif;
-	font-size: 1.5rem;
-	position: absolute;
-	width: 100%;
-	height: 2%;
-	list-style: none;
-}
-.main-navigation li {
-	display: inline-block;
-	height: auto;
-	text-align: left;
-	padding: 0;
-}
-.main-navigation li a {
-	width: auto;
-	padding: 15px 0;
-	line-height: 16px;
-	border: none;
-	color: #FFFFFF;
-}
-.main-navigation li a:hover {
-	color: #D2E32F;
-	padding-left: 1rem;
-}
-.main-navigation li.current {
-	color: #D2E32F;
-}
+ /* dropdown nav */
+ .main-navigation {
+ 	padding: 24px 30px 42px;
+ 	margin: 0;
+ 	background: #000000;
+ 	font-family: "poppins-medium", sans-serif;
+ 	font-size: 1.5rem;
+ 	position: absolute;
+ 	width: 100%;
+ 	height: 2%;
+ 	list-style: none;
+ }
+ .main-navigation li {
+ 	display: inline-block;
+ 	height: auto;
+ 	text-align: left;
+ 	padding: 0;
+ }
+ .main-navigation li a {
+ 	width: auto;
+ 	padding: 15px 0;
+ 	line-height: 16px;
+ 	border: none;
+ 	color: #FFFFFF;
+ }
+ .main-navigation li a:hover {
+ 	color: #D2E32F;
+ 	padding-left: 1rem;
+ }
+ .main-navigation li.current {
+ 	color: #D2E32F;
+ }
 
-.main-navigation .smoothscroll{
-	padding-right: 1rem;
-	text-transform: uppercase;
-}
-.main-navigation .smoothscroll::after{
-	content: '>';
-	display: inline-block;
-	transform: scaleX(0.5);
-	font-weight: bold;
-}
+ .main-navigation .smoothscroll{
+ 	padding-right: 1rem;
+ 	text-transform: uppercase;
+ }
+ .main-navigation .smoothscroll::after{
+ 	content: '>';
+ 	display: inline-block;
+ 	transform: scaleX(0.5);
+ 	font-weight: bold;
+ }
+
 
 
 /**
@@ -1369,8 +1370,18 @@ header {
  */
 #about {
 	background: #FFFFFF;
-	padding-top: 12rem;
-	padding-bottom: 15rem;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	background-attachment: fixed;
+	width: 100%;
+	height: 100%;
+	min-height: 720px;
+	display: table;
+	position: relative;
+	text-align: center;
+	padding-top: 10rem;
+	padding-bottom: 5rem;
 }
 #about .section-intro {
 	margin-bottom: 3rem;
@@ -1378,19 +1389,21 @@ header {
 
 .intro-info {
 	margin-top: 4.2rem;
-	margin-right: -30px;
-	margin-left: -30px;
+	margin-right: -10px;
+	margin-left: -10px;
 }
 .intro-info img {
-	height: 9rem;
-	width: 9rem;
+	height: 25rem;
+	width: 25rem;
 	border-radius: 50%;
-	margin: .9rem 0 0 0;
-	float: left;
+	border:3px solid #999999;
+	margin-bottom: 3.6rem;
+
+	float: center;
 }
 .intro-info .lead {
 	text-align: left;
-	padding-left: 13rem;
+
 }
 
 .about-content {
@@ -1517,6 +1530,7 @@ header {
 	position: relative;
 	margin-top: 1.5rem;
 	margin-bottom: 6rem;
+	
 }
 #resume .timeline-wrap::before {
 	content: "";
@@ -1531,6 +1545,7 @@ header {
 #resume .timeline-block {
 	position: relative;
 	padding-top: 1.5rem;
+
 }
 #resume .timeline-ico {
 	height: 4.8rem;
@@ -1543,6 +1558,7 @@ header {
 	position: absolute;
 	left: 35%;
 	top: .9rem;
+
 	margin-left: -2.4rem;
 }
 #resume .timeline-ico i {
@@ -1966,160 +1982,6 @@ header {
 }
 
 
-/**
- * ===================================================================
- * 15. services - (_layout.scss)
- *
- * -------------------------------------------------------------------
- */
-#services {
-	background: #313131 url(../images/bg.jpg) no-repeat center;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	background-size: cover;
-	padding-top: 12rem;
-	padding-bottom: 12rem;
-	color: white;
-	position: relative;
-}
-#services .overlay {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background: #151515;
-	opacity: .9;
-}
-
-#services .section-intro {
-	margin-bottom: 1.8rem;
-}
-
-#services .section-intro h1 {
-	color: white;
-}
-#services .section-intro h5 {
-	color: #FF0077;
-}
-#services .section-intro p {
-	color: rgba(255, 255, 255, 0.7);
-}
-.services-content {
-	max-width: 1200px;
-}
-.services-list {
-	margin-top: 1.2rem;
-	text-align: center;
-}
-.services-list .service {
-	margin-bottom: 1.2rem;
-	padding: 0 30px;
-}
-.services-list .icon {
-	display: inline-block;
-	margin-bottom: 2.1rem;
-}
-.services-list .icon i {
-	font-size: 5.4rem;
-	color: #FF0077;
-}
-.services-list h3 {
-	color: #FFFFFF;
-}
-.services-list .desc {
-	color: rgba(255, 255, 255, 0.6);
-}
-
-/* pagination */
-.owl-pagination {
-	text-align: center;
-	width: 100%;
-	margin: .6rem 0 0;
-}
-.owl-theme .owl-controls .owl-page {
-	display: inline-block;
-}
-.owl-theme .owl-controls .owl-page span {
-	display: block;
-	width: 1.2rem;
-	height: 1.2rem;
-	margin: 1.2rem .8rem 0 .8rem;
-	border-radius: 50%;
-	display: inline-block;
-	background: #FFFFFF;
-}
-.owl-theme .owl-controls .owl-page.active span {
-	background: #FF0077;
-}
-
-
-/**
- * ===================================================================
- * 16. stats - (_layout.scss)
- *
- * -------------------------------------------------------------------
- */
-#stats {
-	background: #990047;
-	padding-top: 7.2rem;
-	padding-bottom: 6rem;
-	text-align: center;
-}
-#stats .row {
-	max-width: 1440px;
-}
-#stats .stat {
-	border-left: 1px solid rgba(255, 255, 255, 0.12);
-	min-height: 17.4rem;
-}
-#stats .stat:first-child {
-	border: none;
-}
-#stats .icon-part i {
-	font-size: 4.8rem;
-	color: #000000;
-}
-#stats .stat-count {
-	color: #FFFFFF;
-	font-size: 3.6rem;
-	margin-top: 1.2rem;
-	margin-bottom: 0;
-	font-family: "poppins-medium", sans-serif;
-	color: white;
-}
-#stats .stat-title {
-	color: rgba(255, 255, 255, 0.5);
-}
-
-/**
- * responsive:
- * stats
- * -------------------------------------------------------------------
- */
-@media only screen and (max-width:1024px) {
-	#stats .stat:nth-child(n) {
-		border-left: 1px solid rgba(255, 255, 255, 0.12);
-		padding-bottom: 1.5rem;
-	}
-	#stats .stat:nth-child(3n+1) {
-		border: none;
-	}
-}
-@media only screen and (max-width:768px) {
-	#stats .stat:nth-child(n) {
-		border-left: 1px solid rgba(255, 255, 255, 0.12);
-	}
-	#stats .stat:nth-child(2n+1) {
-		border: none;
-	}
-}
-@media only screen and (max-width:600px) {
-	#stats .stat:nth-child(n) {
-		border: none;
-	}
-}
-
 
 /**
  * ===================================================================
@@ -2413,6 +2275,8 @@ footer .copyright span::after {
 footer .copyright span:last-child::after {
 	display: none;
 }
+
+
 
 /**
  * responsive:
